@@ -325,8 +325,45 @@ body {
   height: 608px;
 }
 .comments {
+  height: 300px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 32px;
   display: flex; 
   margin: 50px 0 0 0;
   background-color: #000;
   color: #fff;
+}
+.comment {
+  float: left;
+  text-align: center;
+}
+.first-comment {
+  width: 300px;
+  height: 65px;
+  margin-left: 40px;
+}
+.second-comment {
+  width: 318px;
+  height: 96px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.third-comment {
+  width: 310px;
+  height: 96px;
+  margin-right: 40px;
+}
+.comment-sender {
+  margin-top: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+.verify {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  text-transform: capitalize;
+  color: #8A8A8A;
 }
