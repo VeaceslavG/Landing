@@ -15,7 +15,7 @@ body {
 }
 .fsh-txt {
   margin: 0;
-  padding: 16px;
+  padding: 5px;
   text-align: center;
   color: #fff;
 }
@@ -152,7 +152,7 @@ body {
   justify-content: space-between;
 }
 .shop-card {
-  box-shadow: 10px 10px 10px 0px #ecc488;
+  /* box-shadow: 10px 10px 10px 0px #ecc488; */
   border: 1px solid #fff;
   border-radius: 10px;
   padding: 0 5px 5px 5px; /* UP RIGHT DOWN LEFT  */
@@ -396,6 +396,10 @@ body {
   color: #000;
   cursor: pointer;
 }
+.prepare-LearnMore:hover {
+  font-weight: 700;
+  transition: 0.3s;  
+}
 .ending {
   height: 570px;
   margin-top: 60px;
@@ -442,7 +446,7 @@ body {
 .spotify-btn:hover {
   color: #000;
   font-weight: 700;
-  box-shadow: 0 10px 50px 0 #FFFDD0;
+  box-shadow: 0 4px 20px 0 #FFFDD0;
   background-color: #FAEBD7;
   transition: 0.3s;
 }
@@ -470,5 +474,108 @@ body {
 }
 .app {
   text-decoration: none;
+  color: #fff;
+}
+.app:hover {
+  font-weight: 700;
+  transition: 0.3s;
+}
+.footer {
+  background-color: #000;
+  height: 620px;
+  width: 100%;
+}
+.topInformation {
+  display: flex;
+  padding-top: 55px;
+}
+/* .stayPosted-category {
+  padding-top: 45px;
+} */
+.stayPosted-title {
+  font-family: 'Liberation Serif';
+  font-size: 42px;
+  color: #fff;
+}
+.stayPosted-content {
+  color: #fff;
+  width: 424px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+.stayPosted-email {
+  font-size: 12px;
+  margin-top: 32px;
+  border-bottom: 2px solid #8A8A8A;
+  width: 460px;
+}
+.email-address {
+  margin-left: 5px;
+  background-color: #000;
+  border: 0;
+  padding: 5px 0 5px 0;
+  color: #fff;
+}
+.footer-submitBTN {
+  cursor: pointer;
+  padding: 5px 0 5px 0;
+  border: 0;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}
+.explore {
+  margin-left: 220px;
+  text-transform: uppercase;
+}
+.follow {
+  margin-left: 100px;
+  text-transform: uppercase;
+}
+.sectionTitle {
+  margin-bottom: 30px;
+}
+.dropUsALine {
+  margin-left: 140px;
+  text-transform: uppercase;
+}
+.footerListItem {
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-weight: 400;
+}
+.footerListItem:hover {
+  font-weight: 700;
+  transition: 0.3s;
+  color: #fff;
+}
+.sectionTitle {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bottomInformation {
+  margin-top: 150px;
+}
+.footerSiteInfo {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.copyright {
+  color: #fff;
+}
+.footerInfoItem {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  margin-left: 60px;
+}
+.footerInfoItem:hover {
+  font-weight: 700;
+  transition: 0.3s;
   color: #fff;
 }
