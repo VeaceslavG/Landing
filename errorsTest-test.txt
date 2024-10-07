@@ -1,0 +1,4 @@
+Error 1
+Error 2
+Error 3
+In .gitignore se pune flie-urile de care nu ar trebui sau nu are sens sa stie alti programatori
