@@ -13,76 +13,129 @@ body {
   background-color: #191919;
   width: 100%;
 }
+.fshInformation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 1320px;
+}
 .fsh-txt {
-  margin: 0;
-  padding: 5px;
   text-align: center;
+  padding: 5px;
   color: #fff;
 }
-.header {
-  background-color: #996B60;
-  background-image: url(../images/header-img.png);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  height: 800px;
+.closeFshBtn {
+  cursor: pointer;
+  position: absolute;
+  margin-right: 10px;
+  right: 0;
+  color: #000;
 }
-.header-img {
-  margin: 0;
+.bgHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftSideHeader, .rightSideHeader {
+  position: relative;
+  height: 750px;
   width: 50%;
 }
-/*.icon {
-  justify-content: center;
-  align-items: center;
-}*/
+.leftSideHeader {
+  background-image: url(../images/header-img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.rightSideHeader {
+  background-color: #996B60;
+}
+.icon {
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 42px);
+}
 .menu {
-  top: 35px;
   position: relative;
+  top: 30px;
+  max-width: 1320px;
+  margin: auto;
+  display: flex;
   text-transform: uppercase;
   justify-content: space-between;
-  display: flex;
+  align-items: center;
 }
-.menu-item {
+.leftSideMenu, .rightSideMenu {
+  max-width: 660px;
+  display: flex;
+  align-items: center;
+}
+.leftSideMenu {
+  margin: auto;
+}
+.rightSideMenu {
+  margin: auto;
+}
+.leftMenuItem {
+  margin-right: 60px;
+}
+.rightMenuItem {
+  margin-left: 60px;
+}
+.leftMenuItem, .rightMenuItem {
+  cursor: pointer;
   color: #fff;
   text-decoration: none;
   font-size: 12px;
   font-weight: 400;
   display: inline-block;
-  margin: 0px 55px;
-  padding: 5px;
-}
-.menu-item:hover {
-  background-color: #191919;
-  transition: 0.3s;
-  box-shadow: 0 10px 30px 0 #454545;
   border-radius: 4px;
+  padding: 5px;
+  transition: 0.3s;
 }
-.header-title {
+.leftMenuItem:hover, .rightMenuItem:hover {
+  background-color: #191919;
+  box-shadow: 0 10px 30px 0 #454545;
+}
+.leftMenuItem:active, .rightMenuItem:active {
+  opacity: 0.8;
+}
+.headerInformation {
+  position: relative;
+  top: 300px;
+  height: 425px;
+}
+.headerTitle {
+  margin: 0;
+  position: relative;
+  left: 60px;
   font-family: 'Liberation Serif';
   font-size: 73px;
   color: #fff;
   font-weight: 400;
   width: 500px;
-  margin-left: 54%;
-  margin-top: 250px;
   line-height: 96px;
 }
-.header-description {
-  margin-left: 54%;
-  margin-top: 35px;
+.headerDescription {
+  position: relative;
+  top: 30px;
+  left: 60px;
   color: #fff;
   width: 570px;
   font-size: 18px;
   line-height: 32px;
 }
-.shop-btn {
+.headerBtn {
+  position: relative;
+  top: 70px;
   background-color: transparent;
-  position: absolute;
-  margin-top: 46px;
-  margin-left: 54%;
+  left: 60px;
   border: 1px solid #fff;
   width: 180px;
   height: 52px;
-  cursor: pointer;
   border-radius: 2px;
   color: #000;
   text-decoration: none;
@@ -91,12 +144,15 @@ body {
   padding: 18px 60px;
   text-align: center;
   text-transform: uppercase;
+  transition: 0.3s;
 }
-.shop-btn:hover {
+.headerBtn:hover {
   font-weight: 700;
   box-shadow: 0 10px 50px 0 #FFFDD0;
   background-color: #FAEBD7;
-  transition: 0.3s;
+}
+.headerBtn:active {
+  opacity: 0.8;
 }
 .wine-info {
   margin-top: 55px;
@@ -226,6 +282,9 @@ body {
   background-color: #000;
   transition: 0.3s;
 }
+.card-shop_btn:active {
+  opacity: 0.8;
+}
 .horizontal-line_b {
   background: #BDBDBD;
   margin-top: 140px;
@@ -249,7 +308,7 @@ body {
   line-height: 32px;
   margin-top: 59px;
   margin-left: 343px;
-  width: 550px;
+  width: 490px;
 }
 .horizontal-line_c {
   background: #BDBDBD;
@@ -324,6 +383,9 @@ body {
   width: 880px;
   height: 608px;
 }
+.commentsSize {
+  height: 200px;
+}
 .comments {
   height: 330px;
   font-family: 'Roboto';
@@ -381,7 +443,7 @@ body {
   width: 630px;
   height: 160px;
   margin-top: 61px;
-  margin-bottom: 155px;
+  margin-bottom: 140px;
 }
 .prepare-content {
   font-size: 16px;
@@ -395,10 +457,10 @@ body {
   text-decoration: none;
   color: #000;
   cursor: pointer;
+  transition: 0.1s; 
 }
 .prepare-LearnMore:hover {
   font-weight: 700;
-  transition: 0.3s;  
 }
 .ending {
   height: 570px;
@@ -450,6 +512,9 @@ body {
   background-color: #FAEBD7;
   transition: 0.3s;
 }
+.spotify-btn:active {
+  opacity: 0.8;
+}
 .socialNetworks {
   position: absolute;
   background-color: #000;
@@ -475,10 +540,10 @@ body {
 .app {
   text-decoration: none;
   color: #fff;
+  transition: 0.1s;
 }
 .app:hover {
   font-weight: 700;
-  transition: 0.3s;
 }
 .footer {
   background-color: #000;
@@ -489,9 +554,6 @@ body {
   display: flex;
   padding-top: 55px;
 }
-/* .stayPosted-category {
-  padding-top: 45px;
-} */
 .stayPosted-title {
   font-family: 'Liberation Serif';
   font-size: 42px;
@@ -547,10 +609,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   font-weight: 400;
+  transition: 0.1s;
 }
 .footerListItem:hover {
   font-weight: 700;
-  transition: 0.3s;
   color: #fff;
 }
 .sectionTitle {
@@ -573,9 +635,105 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   margin-left: 60px;
+  transition: 0.2s;
 }
 .footerInfoItem:hover {
   font-weight: 700;
-  transition: 0.3s;
   color: #fff;
+}
+
+@media (max-width: 1320px) {
+  .container {
+    max-width: 1280px;
+  }
+  .header {
+    height: 700px;
+  }
+  .introAppet-img {
+    width: 1280px;
+    height: 520px;
+  }
+  .prepare-title {
+    width: 600px;
+  }
+  .prepare-content {
+    width: 600px;
+  }
+  .headerInformation {
+    top: 250px;
+  }
+  .rightSideHeader, .leftSideHeader {
+    height: 700px;
+  }
+}
+@media (max-width: 1260px) {
+  .container {
+    max-width: 1220px;
+  }
+  .introAppet-img {
+    width: 1210px;
+    height: 450px;
+  }
+  .prepare-title {
+    width: 550px;
+  }
+  .prepare-content {
+    width: 500px;
+  }
+  .commentsSize {
+    height: 170px;
+  }
+  .prepapre-content {
+    width: 550px;
+  }
+  .dropUsALine {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 930px) {
+  .container {
+    max-width: 890px;
+  }
+  .header {
+    height: 500px;
+  }
+  .rightSideHeader, .leftSideHeader {
+    height: 500px;
+  }
+  .headerInformation {
+    top: 135px;
+  }
+  .headerTitle {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .headerDescription {
+    width: 370px;
+  }
+  .shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop-cards {
+    flex-direction: column;
+    width: 610px;
+  }
+  .shop-card {
+    width: 600px;
+  }
+  .horizontal-line_a, .horizontal-line_b, .horizontal-line_c {
+    max-width: 890px;
+  }
+  .introAppet-img {
+    width: 880px;
+    height: 380px;
+  }
+  .appetTitle {
+    width: 390px;
+  }
+  .appetInfo {
+    margin-left: 55px;
+    width: 380px;
+  }
 }
