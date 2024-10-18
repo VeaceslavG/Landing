@@ -43,7 +43,7 @@ cd landing-page
 start index.html
 ```
 
--
+---
 
 [Enjoy the project!][1]
 
