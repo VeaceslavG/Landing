@@ -48,3 +48,5 @@ start index.html
 [Enjoy the project!][1]
 
 [1]: https://veaceslavg.github.io/Landing/
+
+<div align=center>© 2024 VeaceslavG All rights reserved</div>
