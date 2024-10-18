@@ -1,7 +1,5 @@
 # Landing Page
 
-(images/hausProject.png)
-
 ## Overview
 
 This project is a simple non-responsive landing page that should make good impresion after looking at it.
@@ -29,22 +27,24 @@ This project is a simple non-responsive landing page that should make good impre
 
 **1. Clone the repository**:
 
-```console
+```
 git clone https://github.com/VeaceslavG/Landing.git
 ```
 
 **2. Navigate to the project directory**:
 
-```console
+```
 cd landing-page
 ```
 
 **3. Open the `index html` file** in your browser:
 
-```console
+```
 start index.html
 ```
 
 ---
 
-Enjoy the project!
+[Enjoy the project!][1]
+
+[1]: https://veaceslavg.github.io/Landing/
